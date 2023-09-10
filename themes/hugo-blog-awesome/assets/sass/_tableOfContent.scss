@@ -1,0 +1,39 @@
+/* Table of contents */
+details {
+    cursor: pointer;
+}
+
+@media (max-width: 1250px) {
+    .toc {
+        margin: 1.1rem 0 1rem 0;
+        padding: .5rem 1rem .5rem 1rem;
+        border-radius: .3rem;
+        background-color: $toc-bg;
+    }
+}
+
+@media (min-width: 1250px) {
+    .toc {
+        margin: 2rem 0 1rem 685px;
+        padding: .5rem 1rem .5rem 1rem;
+        border-radius: .3rem;
+        background-color: $toc-bg;
+        width: 14rem;
+        position: fixed;
+        top: 10rem;
+        font-size: small;
+        transition: top .2s ease-out;
+        z-index: 1;
+    }
+}
+
+.toc ul {
+    padding-top: 1rem;
+    margin-left: 0.5rem;
+    padding-left: 1rem;
+
+.toc li {
+    margin-bottom: 0.5em;
+    line-height: 1.4;
+    }
+}
