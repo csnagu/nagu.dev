@@ -10,8 +10,10 @@ code {
   word-wrap: normal;
   font-size: inherit;
 }
-
+// Inline code
+li>code,
 p > code {
+  white-space: pre-wrap;
   font-size: 0.9em;
   padding: 1px 3px;
   position: relative;
@@ -87,7 +89,7 @@ pre {
 .highlight .c1,
 .highlight .cs {
   color: #928374;
-  // font-style: italic;
+  font-style: italic;
 }
 
 .highlight .cp {
@@ -152,17 +154,17 @@ pre {
 .highlight .sx,
 .highlight .s1 {
   color: #b8bb26;
-  // font-style: italic;
+  font-style: italic;
 }
 
 .highlight .si {
   color: #b8bb26;
-  // font-style: italic;
+  font-style: italic;
 }
 
 .highlight .sr {
   color: #b8bb26;
-  // font-style: italic;
+  font-style: italic;
 }
 
 .highlight .se {

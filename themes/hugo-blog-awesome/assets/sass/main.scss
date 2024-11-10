@@ -1,12 +1,12 @@
 //////////////// 1. Light Colors /////////////////
 $text-base-color: #434648;
-$text-link-blue: #008cff;
+$text-link-blue: #003fff;
 $text-link-blue-active: #0036c7;
 $bloquote-border: #c4c8cc;
 $blockquote-text: #525b66;
 $inline-code-text: #333638;
-$inline-code-bg: #e8e8e9;
-$toc-bg: #f4f4f2;
+$inline-code-bg: #d8dbe2;
+$toc-bg: #edecec;
 $go-top-bg: #dfe0e397;
 $go-top-bg-hover: #dfe0e3;
 
@@ -35,7 +35,7 @@ $dark-smoke: #4a4d56;
 $dark-gray: #767f87;
 
 //////////////// 3. Fonts preferences /////////////////
-$sans-family: 'Noto Sans JP',Roboto, sans-serif;
+$sans-family: Roboto, sans-serif;
 $mono-family: Consolas, monospace;
 $base-font-size: 16px;
 $medium-font-size: $base-font-size * 0.938;

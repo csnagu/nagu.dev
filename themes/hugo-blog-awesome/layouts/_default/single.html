@@ -4,20 +4,15 @@
         <article>
             <header class="header">
                 <h1 class="header-title">{{ .Title }}</h1>
+                {{ $configDateFormat := .Site.Params.dateFormat | default ":date_medium" }}
                 {{ with .Date }}
                 {{ $ISO_time := dateFormat "2006-01-02T15:04:05-07:00" . }}
                 <div class="post-meta">
-                    <time datetime="{{ $ISO_time }}" itemprop="datePublished"> {{ . | time.Format ":date_medium" }} </time>
+                    <time datetime="{{ $ISO_time }}" itemprop="datePublished"> {{ . | time.Format $configDateFormat }} </time>
                 </div>
                 {{ end }}
             </header>
-            <!-- ヘッダーがなくても33文字の <nav id="TableOfContents"></nav> が生成される -->
-            {{- if and (or .Params.toc .Site.Params.toc) (gt (len .TableOfContents) 33) }}
-            <nav class="toc" id="toc">
-                <b>目次</b>
-                {{ .TableOfContents }}
-            </nav>
-            {{- end -}}
+            {{ partial "toc.html" .}}
             <div class="page-content">
                 {{ .Content }}
             </div>
