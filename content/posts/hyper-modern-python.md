@@ -8,7 +8,7 @@ draft: false
 ![](https://www.oreilly.co.jp/books/images/picture_large978-4-8144-0092-8.jpeg)
 
 [ハイパーモダンPython](https://www.oreilly.co.jp/books/9784814400928/)を読んだ覚え書き。
-****
+
 ## 1章 Pythonのインストール
 
 python-launcherが便利らしい。
