@@ -1,18 +1,22 @@
 {{- $toc := .Site.Params.toc -}}
 
+{{ $tocCount := (findRE "<li" .TableOfContents) | len }}
+
 {{- if isset .Params "toc" -}}
     {{ $toc = .Params.toc }}
 {{- end -}}
 
 {{- if $toc -}}
-    {{ $tocOpen := "" }}
-    {{ if or .Site.Params.tocOpen .Params.tocOpen }}
-        {{ if not (eq .Params.tocOpen false) }}
-            {{ $tocOpen = "open" }}
+    {{ if gt $tocCount 3 }}
+        {{ $tocOpen := "" }}
+        {{ if or .Site.Params.tocOpen .Params.tocOpen }}
+            {{ if not (eq .Params.tocOpen false) }}
+                {{ $tocOpen = "open" }}
+            {{ end }}
         {{ end }}
+        <details class="toc" {{ $tocOpen }}>
+            <summary><b>{{ T "single.table_of_contents" }}</b></summary>
+            {{ .TableOfContents }}
+        </details>
     {{ end }}
-    <details class="toc" {{ $tocOpen }}>
-        <summary><b>{{ T "single.table_of_contents" }}</b></summary>
-        {{ .TableOfContents }}
-    </details>
 {{- end -}}

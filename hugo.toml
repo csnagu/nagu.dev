@@ -62,6 +62,7 @@ defaultColor = "auto"      # set color mode: dark, light, auto
 description = "Journal of engineering"
 mainSections = ['posts']
 toc = true                                        # set to false to disable table of contents 'globally'
+tocOpen = true
 goToTop = true                                    # set to false to disable 'go to top' button
 additionalScripts = ['js/custom.js', 'js/toc.js']
 # Will try to load 'assets/js/custom.js' and 'assets/js/custom-2.js'.
@@ -94,7 +95,11 @@ name = "github"
 url = "https://github.com/csnagu"
 
 [[params.socialIcons]]
-name = "twitter"
+name = "bluesky"
+url = "https://bsky.app/profile/chikast.bsky.social"
+
+[[params.socialIcons]]
+name = "x"
 url = "https://twitter.com/cs_nagu"
 
 [[params.socialIcons]]
