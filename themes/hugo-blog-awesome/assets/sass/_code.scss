@@ -63,6 +63,12 @@ pre {
   }
 }
 
+/* Mermaid 図用のクラスに対して背景色を上書き */
+.mermaid {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
 .highlight table td {
   padding: 5px;
 }
