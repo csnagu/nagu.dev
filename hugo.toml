@@ -109,9 +109,5 @@ name = "bluesky"
 url = "https://bsky.app/profile/chikast.bsky.social"
 
 [[params.socialIcons]]
-name = "x"
-url = "https://twitter.com/cs_nagu"
-
-[[params.socialIcons]]
 name = "Rss"
 url = "index.xml"
