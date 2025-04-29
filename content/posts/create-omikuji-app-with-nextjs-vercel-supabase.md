@@ -8,7 +8,7 @@ tags: ['プログラミング', 'アプリ開発', 'Next.js', 'supabase']
 
 ## 細かい話なんてどうでもいいから､早くおみくじが引きたいよ
 
-[おみくじ / Omikuzi](omikuzi.nagu.dev)
+[おみくじ / Omikuzi](https://omikuzi.nagu.dev)
 
 おみくじを引いた様子｡
 <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:zumi64soisjbkkh72emx4c6y/app.bsky.feed.post/3lhvhc7ss6s2j" data-bluesky-cid="bafyreihwma32tuilvfutyog4es6nv6iu4f6np7c65mnei6npiu24o2dsv4"><p lang="ja">今日の運勢は「吉」でした！
