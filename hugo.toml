@@ -63,6 +63,11 @@ pageRef = "about"
 name = 'About'
 url = '/about/'
 weight = 30
+[[menu.main]]
+pageRef = "privacy"
+name = 'Privacy'
+url = '/privacy/'
+weight = 40
 
 [params]
 sitename = "blog.nagu.dev"
