@@ -85,6 +85,7 @@ additionalScripts = ['js/custom.js', 'js/toc.js']
 # Your custom scripts will be concatinated to one file `custom.js`.
 # When building for production it will be minified.
 # The file `custom.js` is loaded on each page (before body tag ends).
+dateFormat = "2006-01-02"
 
 [params.author]
 avatar = "avatar.jpeg" # put the file in assets folder; also ensure that image has same height and width
