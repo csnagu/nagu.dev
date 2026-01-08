@@ -1,7 +1,7 @@
 ---
 title: '素人がLive2Dモデルを自作してVTube Studioで動かす'
 description: '絵心やモデリング経験のない素人が､生成AIや先人の力を借りて20時間でLive2Dモデルを作ってVTube Studioで動かす'
-date: 2026-01-09
+date: 2026-01-08
 draft: false
 ---
 
