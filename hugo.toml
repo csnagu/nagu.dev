@@ -96,6 +96,9 @@ avatar = "avatar.jpeg" # put the file in assets folder; also ensure that image h
 name = "csnagu"
 description = "Journal of engineering"
 
+[author]
+name = "csnagu"
+
 # Allow to override webmanifest options
 [params.webmanifest]
 name = "sitename"         # will use "params.sitename" or "title" by default
