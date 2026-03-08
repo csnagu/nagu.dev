@@ -4,11 +4,13 @@ title = 'Journagu'
 # This is what goes in <html lang="">
 languageCode = 'ja'
 
-theme = "hugo-blog-awesome"
-
 # This defines how dates are formatted
 defaultContentLanguage = "ja"
 defaultContentLanguageInSubdir = false
+
+[module]
+  [[module.imports]]
+    path = "github.com/hugo-sid/hugo-blog-awesome"
 
 # Enable emojis globally
 enableEmoji = true
