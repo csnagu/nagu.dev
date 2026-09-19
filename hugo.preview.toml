@@ -1,0 +1,8 @@
+# This file is loaded only for the draft Preview build in GitHub Actions.
+baseURL = "https://nagu.dev/preview/"
+
+[params]
+preview = true
+
+[params.webmanifest]
+start_url = "/preview/"
