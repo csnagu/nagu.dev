@@ -2,6 +2,7 @@
 title: "RubyでネストしているHashをいい感じにmergeする"
 description: '深くネストしているHashデータをRubyのHash#mergeでmergeすると深い階層が上書きされてしまうので対応を模索した話'
 date: 2022-01-30
+draft: false
 ---
 
 ## 結論

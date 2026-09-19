@@ -2,6 +2,7 @@
 title: 'MacからHyper-Vで作成したリモートの仮想マシンにSSH接続する'
 description: 'MacからHyper-Vで作成したリモートの仮想マシンにSSH接続する'
 date: 2020-07-11
+draft: false
 ---
 
 ## 概要

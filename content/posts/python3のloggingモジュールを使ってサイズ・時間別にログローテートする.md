@@ -2,6 +2,7 @@
 title: 'python3のloggingモジュールを使ってサイズ・時間別にログローテートする'
 description: 'python3のloggingモジュールを使ってサイズ・時間別にログローテートする'
 date: 2020-08-15
+draft: false
 ---
 
 ## 概要

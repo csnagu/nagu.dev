@@ -2,6 +2,7 @@
 title: 'macからwindowsに乗り換え カーソル移動系のキーバインドを再現する'
 description: 'macOSのemacsライクなキーバインドのうち、カーソル移動系のキーバインドをWindows10で再現する'
 date: 2021-05-30
+draft: false
 ---
 
 ## やること

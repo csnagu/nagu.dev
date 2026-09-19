@@ -1,0 +1,57 @@
+media:
+  - name: images
+    label: Images
+    input: static/images
+    output: /images
+    categories: [image]
+
+content:
+  - name: posts
+    label: Posts
+    type: collection
+    path: content/posts
+    format: yaml-frontmatter
+    filename:
+      template: "{primary}.md"
+      field: create
+    view:
+      fields: [title, date, draft]
+      primary: title
+      sort: [date, title]
+      search: [title, description, tags]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: text
+      - name: date
+        label: Date
+        type: date
+        options:
+          format: yyyy-MM-dd
+      - name: draft
+        label: Draft
+        type: boolean
+        default: true
+      - name: tags
+        label: Tags
+        type: string
+        list: true
+      - name: body
+        label: Body
+        type: rich-text
+        options:
+          format: markdown
+          switcher: true
+          media: images
+          path: static/images
+
+settings:
+  content:
+    merge: true

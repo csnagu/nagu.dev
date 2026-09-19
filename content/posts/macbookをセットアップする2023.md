@@ -2,6 +2,7 @@
 title: 'macbookをセットアップする2023'
 description: 'm2 macbook air (2022) を購入したためよく使うツール等をセットアップする時のメモ'
 date: 2023-04-28
+draft: false
 ---
 
 ## todo-list

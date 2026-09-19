@@ -2,7 +2,7 @@ baseURL = 'https://nagu.dev/'
 title = 'Journagu'
 
 # This is what goes in <html lang="">
-languageCode = 'ja'
+locale = 'ja-JP'
 
 # This defines how dates are formatted
 defaultContentLanguage = "ja"
@@ -10,7 +10,7 @@ defaultContentLanguageInSubdir = false
 
 [module]
   [[module.imports]]
-    path = "github.com/hugo-sid/hugo-blog-awesome"
+    path = "github.com/hugo-sid/hugo-blog-awesome/v2"
 
 # Enable emojis globally
 enableEmoji = true
@@ -29,11 +29,13 @@ ignoreErrors = ["additional-script-loading-error"] # ignore error of loading add
 
 [languages]
   [languages.ja]
-    languageName = "日本語"
+    label = "日本語"
+    locale = "ja-JP"
     weight = 1
 
   [languages.en]
-    languageName = "English"
+    label = "English"
+    locale = "en-US"
     weight = 2
 
 # set markup.highlight.noClasses=false to enable code highlight
@@ -118,7 +120,7 @@ url = "https://github.com/csnagu"
 
 [[params.socialIcons]]
 name = "bluesky"
-url = "https://bsky.app/profile/chikast.bsky.social"
+url = "https://bsky.app/profile/chikr.bsky.social"
 
 [[params.socialIcons]]
 name = "Rss"
