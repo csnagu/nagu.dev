@@ -5,6 +5,8 @@ date: 2026-09-19
 draft: true
 tags:
   - pages cms
+  - blog
+  - poem
 ---
 ## Github Pages と Hugo なブログ
 
@@ -16,10 +18,18 @@ tags:
 新しいブログポストを作成する時は `/contet/posts/xxx.md` を作成する｡エディタはvscodeを使っているため次のようなフローになっている｡
 
 1. vscodeでプロジェクトを開く
-2. `hugo server -D` でサーバを起動する
+2. `hugo serve` でサーバを起動する
 3. vscodeでxxx.mdを書く (WYSIWYGではない)
-4. `localhost:3333`で確認する
+4. `localhost:1313`で確認する
 5. commit, push
 
 めんどくさいね ٩( ᐛ )و
+
+## Pages CMSを使ってvscodeから脱却する
+
+[Pages CMS](https://pagescms.org) というオープンソースなCMSがある｡
+
+
+
+## 感想
 
