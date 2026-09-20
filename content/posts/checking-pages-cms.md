@@ -34,7 +34,7 @@ draft: false
 
 画像ファイルをドラッグ&ドロップすると `static/images/`に勝手に追加してくれる｡ブラウザから手軽に開けるのもいい感じ｡ `Cmd + S`で保存ができるのも手軽で良い｡
 
-![Screenshot 2026-09-20 at 13.44.09 Large.jpeg](</images/Screenshot 2026-09-20 at 13.44.09 Large.jpeg>)
+![checking-pages-cms.jpeg](</images/checking-pages-cms.jpeg>)
 
 これまでvscodeを開きつつブラウザを行き来していた煩雑な作業がブラウザだけで完結するようになった｡
 
