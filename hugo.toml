@@ -63,15 +63,20 @@ name = 'Posts'
 url = '/posts/'
 weight = 20
 [[menu.main]]
+pageRef = "/pages/works"
+name = 'Works'
+url = '/pages/works/'
+weight = 30
+[[menu.main]]
 pageRef = "about"
 name = 'About'
 url = '/about/'
-weight = 30
+weight = 40
 [[menu.main]]
 pageRef = "privacy"
 name = 'Privacy'
 url = '/privacy/'
-weight = 40
+weight = 50
 
 [params]
 sitename = "blog.nagu.dev"

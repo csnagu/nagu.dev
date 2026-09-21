@@ -2,6 +2,7 @@
 {{ $title := .Get "title" }}
 {{ $desc := .Get "desc" }}
 {{ $image := .Get "image" }}
+{{ $alt := .Get "alt" | default "" }}
 {{ $u := urls.Parse $url }}
 {{ $host := $u.Host }}
 
@@ -11,7 +12,7 @@
 
 <a href="{{ $url }}" class="link-card" target="_blank" rel="noopener">
   <div class="link-card-thumbnail">
-    <img src="{{ $image }}" alt="Thumbnail">
+    <img src="{{ $image }}" alt="{{ $alt }}" loading="lazy">
   </div>
   <div class="link-card-body">
     <div class="link-card-title">{{ $title }}</div>
