@@ -25,8 +25,8 @@ html.dark .toc {
   background: transparent;
 }
 
-html.dark .toc ul ul {
-  border-left-color: rgba(186, 189, 196, 0.18);
+html.dark .toc ul ul::before {
+  background: rgba(186, 189, 196, 0.18);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -36,8 +36,8 @@ html.dark .toc ul ul {
     background: transparent;
   }
 
-  html:not(.light) .toc ul ul {
-    border-left-color: rgba(186, 189, 196, 0.18);
+  html:not(.light) .toc ul ul::before {
+    background: rgba(186, 189, 196, 0.18);
   }
 }
 
@@ -88,8 +88,18 @@ html.dark .toc ul ul {
 
 .toc ul ul {
   margin: 0.15rem 0 0 0.75rem;
-  padding: 0 0 0 0.75rem;
-  border-left: 1px solid rgba(67, 70, 72, 0.18);
+  padding: 0 0 0 1.25rem;
+  position: relative;
+}
+
+.toc ul ul::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -0.5rem;
+  width: 1px;
+  background: rgba(67, 70, 72, 0.18);
+  content: "";
 }
 
 .toc a,
