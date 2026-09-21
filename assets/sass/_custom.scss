@@ -19,25 +19,25 @@ body {
   background: transparent;
 }
 
-html.dark .toc,
-html.dark .toc ul ul {
+html.dark .toc {
   border-color: rgba(186, 189, 196, 0.18);
   border-left-color: rgba(186, 189, 196, 0.48);
-}
-
-html.dark .toc {
   background: transparent;
 }
 
+html.dark .toc ul ul {
+  border-left-color: rgba(186, 189, 196, 0.18);
+}
+
 @media (prefers-color-scheme: dark) {
-  html:not(.light) .toc,
-  html:not(.light) .toc ul ul {
+  html:not(.light) .toc {
     border-color: rgba(186, 189, 196, 0.18);
     border-left-color: rgba(186, 189, 196, 0.48);
+    background: transparent;
   }
 
-  html:not(.light) .toc {
-    background: transparent;
+  html:not(.light) .toc ul ul {
+    border-left-color: rgba(186, 189, 196, 0.18);
   }
 }
 
