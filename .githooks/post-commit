@@ -1,0 +1,7 @@
+#!/bin/sh
+
+[ "$(git branch --show-current)" = main ] || exit 0
+
+if ! git pull --rebase --autostash origin main; then
+  printf '%s\n' 'main の同期に失敗しました。状態を確認して解消してください。' >&2
+fi

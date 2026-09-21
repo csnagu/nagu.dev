@@ -10,6 +10,115 @@ body {
   font-family: "Noto Sans CJK", sans-serif;
 }
 
+.toc {
+  margin: 1.5rem 0;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(67, 70, 72, 0.18);
+  border-left: 3px solid rgba(67, 70, 72, 0.48);
+  border-radius: 0.5rem;
+  background: transparent;
+}
+
+html.dark .toc,
+html.dark .toc ul ul {
+  border-color: rgba(186, 189, 196, 0.18);
+  border-left-color: rgba(186, 189, 196, 0.48);
+}
+
+html.dark .toc {
+  background: transparent;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not(.light) .toc,
+  html:not(.light) .toc ul ul {
+    border-color: rgba(186, 189, 196, 0.18);
+    border-left-color: rgba(186, 189, 196, 0.48);
+  }
+
+  html:not(.light) .toc {
+    background: transparent;
+  }
+}
+
+.toc summary {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  list-style: none;
+}
+
+.toc summary::-webkit-details-marker {
+  display: none;
+}
+
+.toc summary::before {
+  content: "";
+  width: 0.35rem;
+  height: 0.35rem;
+  flex: 0 0 auto;
+  border: solid currentColor;
+  border-width: 0 1px 1px 0;
+  opacity: 0.7;
+  transform: rotate(-45deg);
+  transition: transform 150ms ease;
+}
+
+.toc[open] summary::before {
+  transform: rotate(45deg);
+}
+
+.toc nav {
+  margin-top: 0.75rem;
+}
+
+.toc ul {
+  margin: 0;
+  padding: 0 0 0 1.1rem;
+}
+
+.toc ul li {
+  margin-bottom: 0;
+  padding: 0.15rem 0;
+  line-height: 1.6;
+}
+
+.toc ul ul {
+  margin: 0.15rem 0 0 0.75rem;
+  padding: 0 0 0 0.75rem;
+  border-left: 1px solid rgba(67, 70, 72, 0.18);
+}
+
+.toc a,
+html.dark .page-content .toc a,
+html:not(.light) .page-content .toc a {
+  color: inherit;
+  opacity: 0.78;
+  text-decoration: none;
+}
+
+.toc a:hover,
+html.dark .page-content .toc a:hover,
+html:not(.light) .page-content .toc a:hover,
+.toc a:focus,
+html.dark .page-content .toc a:focus,
+html:not(.light) .page-content .toc a:focus {
+  color: inherit;
+  opacity: 1;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+.toc a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+  border-radius: 2px;
+  opacity: 1;
+}
+
 /* Mermaid blocks render on a white canvas for readability. */
 .mermaid {
   background-color: #fff !important;

@@ -15,7 +15,7 @@
             {{ end }}
         {{ end }}
         <details class="toc" {{ $tocOpen }}>
-            <summary><b>{{ T "single.table_of_contents" }}</b></summary>
+            <summary><span class="toc-title">{{ T "single.table_of_contents" }}</span></summary>
             {{ .TableOfContents }}
         </details>
     {{ end }}
