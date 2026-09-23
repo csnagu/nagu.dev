@@ -14,3 +14,6 @@ hugo.linux
 
 # OS-generated files
 .DS_Store
+
+# Local plans
+/plans/
