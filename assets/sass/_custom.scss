@@ -11,103 +11,94 @@ body {
 }
 
 .toc {
-  margin: 1.5rem 0;
-  padding: 0.75rem 1rem;
-  border: 1px solid rgba(67, 70, 72, 0.18);
-  border-left: 3px solid rgba(67, 70, 72, 0.48);
-  border-radius: 0.5rem;
-  background: transparent;
+  --toc-fg: 67, 70, 72;
+  margin: 2rem 0;
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(var(--toc-fg), 0.1);
+  border-radius: 0.875rem;
+  background: rgba(var(--toc-fg), 0.035);
 }
 
 html.dark .toc {
-  border-color: rgba(186, 189, 196, 0.18);
-  border-left-color: rgba(186, 189, 196, 0.48);
-  background: transparent;
-}
-
-html.dark .toc ul ul::before {
-  background: rgba(186, 189, 196, 0.18);
+  --toc-fg: 186, 189, 196;
 }
 
 @media (prefers-color-scheme: dark) {
   html:not(.light) .toc {
-    border-color: rgba(186, 189, 196, 0.18);
-    border-left-color: rgba(186, 189, 196, 0.48);
-    background: transparent;
-  }
-
-  html:not(.light) .toc ul ul::before {
-    background: rgba(186, 189, 196, 0.18);
+    --toc-fg: 186, 189, 196;
   }
 }
 
 .toc summary {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
-  font-size: 0.875rem;
+  padding: 0 0.5rem;
+  cursor: pointer;
+  font-size: 0.8125rem;
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.85;
   list-style: none;
+  transition: opacity 150ms ease;
+}
+
+.toc summary:hover {
+  opacity: 1;
 }
 
 .toc summary::-webkit-details-marker {
   display: none;
 }
 
-.toc summary::before {
+.toc summary::after {
   content: "";
-  width: 0.35rem;
-  height: 0.35rem;
-  flex: 0 0 auto;
+  width: 0.4rem;
+  height: 0.4rem;
+  margin-left: auto;
   border: solid currentColor;
-  border-width: 0 1px 1px 0;
-  opacity: 0.7;
-  transform: rotate(-45deg);
-  transition: transform 150ms ease;
+  border-width: 0 1.5px 1.5px 0;
+  transform: rotate(45deg) translateY(-2px);
+  transition: transform 200ms ease;
 }
 
-.toc[open] summary::before {
-  transform: rotate(45deg);
+.toc[open] summary::after {
+  transform: rotate(-135deg) translateY(-2px);
 }
 
 .toc nav {
-  margin-top: 0.75rem;
+  margin-top: 0.6rem;
 }
 
 .toc ul {
   margin: 0;
-  padding: 0 0 0 1.1rem;
+  padding: 0;
+  list-style: none;
 }
 
 .toc ul li {
-  margin-bottom: 0;
-  padding: 0.15rem 0;
-  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
 }
 
 .toc ul ul {
-  margin: 0.15rem 0 0 0.75rem;
-  padding: 0 0 0 1.25rem;
-  position: relative;
-}
-
-.toc ul ul::before {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -0.5rem;
-  width: 1px;
-  background: rgba(67, 70, 72, 0.18);
-  content: "";
+  margin: 0.1rem 0 0.25rem 0.9rem;
+  padding-left: 0.5rem;
+  border-left: 1px solid rgba(var(--toc-fg), 0.15);
+  font-size: 0.925em;
 }
 
 .toc a,
 html.dark .page-content .toc a,
 html:not(.light) .page-content .toc a {
+  display: block;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.4rem;
   color: inherit;
-  opacity: 0.78;
+  opacity: 0.75;
   text-decoration: none;
+  transition: background-color 150ms ease, opacity 150ms ease;
 }
 
 .toc a:hover,
@@ -117,16 +108,14 @@ html:not(.light) .page-content .toc a:hover,
 html.dark .page-content .toc a:focus,
 html:not(.light) .page-content .toc a:focus {
   color: inherit;
+  background: rgba(var(--toc-fg), 0.08);
   opacity: 1;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
+  text-decoration: none;
 }
 
 .toc a:focus-visible {
   outline: 2px solid currentColor;
-  outline-offset: 2px;
-  border-radius: 2px;
-  opacity: 1;
+  outline-offset: 1px;
 }
 
 /* Mermaid blocks render on a white canvas for readability. */
